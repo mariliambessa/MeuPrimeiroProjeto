@@ -1,2 +1,360 @@
 Nome: Marília Mota Bessa
 Hobbies: sexo, drogas e funk 150
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~
+$ ls
+'3D Objects'/
+'Ambiente de Impressão'@
+'Ambiente de Rede'@
+ AppData/
+'Configurações Locais'@
+ Contacts/
+ Cookies@
+'Dados de Aplicativos'@
+ Desktop/
+ Documents/
+ Downloads/
+ eclipse/
+ eclipse-workspace/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Menu Iniciar'@
+'Meus Documentos'@
+ MicrosoftEdgeBackups/
+ Modelos@
+ Music/
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{8c1a85cf-95f3-11e8-a0fa-9883896bbdff}.TM.blf
+ NTUSER.DAT{8c1a85cf-95f3-11e8-a0fa-9883896bbdff}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{8c1a85cf-95f3-11e8-a0fa-9883896bbdff}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ OneDrive/
+ Pictures/
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+ Videos/
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~
+$ cd Desktop/Projeto/
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto
+$ git init
+Initialized empty Git repository in C:/Users/MooDev - 02/Desktop/Projeto/.git/
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ touch MyName.txt
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git add .
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git add .
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   MyName.txt
+
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git add .
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git commit -m "IniciandoProjeto"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'MooDev - 02@DESKTOP-G60L4B3.(none)')
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git config --global user.email "mariliambessa@gmail.com"
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git config --global user.name
+.git/       MyName.txt
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git config --global user.name "Marilia Bessa"
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git commit -m "Iniciando Projeto"
+[master (root-commit) 8749a01] Iniciando Projeto
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 MyName.txt
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git log
+commit 8749a01c641da7a2e8140e0b6e815426c1cdc14d (HEAD -> master)
+Author: Marilia Bessa <mariliambessa@gmail.com>
+Date:   Mon Jun 3 20:57:04 2019 -0300
+
+    Iniciando Projeto
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   MyName.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git add .
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git show
+commit 8749a01c641da7a2e8140e0b6e815426c1cdc14d (HEAD -> master)
+Author: Marilia Bessa <mariliambessa@gmail.com>
+Date:   Mon Jun 3 20:57:04 2019 -0300
+
+    Iniciando Projeto
+
+diff --git a/MyName.txt b/MyName.txt
+new file mode 100644
+index 0000000..e69de29
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   MyName.txt
+
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git commit -m "adição do nome"
+[master 4b80781] adição do nome
+ 1 file changed, 1 insertion(+)
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git log
+commit 4b8078146e28958de15f481ec79736820833122d (HEAD -> master)
+Author: Marilia Bessa <mariliambessa@gmail.com>
+Date:   Mon Jun 3 21:07:24 2019 -0300
+
+    adição do nome
+
+commit 8749a01c641da7a2e8140e0b6e815426c1cdc14d
+Author: Marilia Bessa <mariliambessa@gmail.com>
+Date:   Mon Jun 3 20:57:04 2019 -0300
+
+    Iniciando Projeto
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git show
+commit 4b8078146e28958de15f481ec79736820833122d (HEAD -> master)
+Author: Marilia Bessa <mariliambessa@gmail.com>
+Date:   Mon Jun 3 21:07:24 2019 -0300
+
+    adição do nome
+
+diff --git a/MyName.txt b/MyName.txt
+index e69de29..f365967 100644
+--- a/MyName.txt
++++ b/MyName.txt
+@@ -0,0 +1 @@
++nome: Mar<ED>lia Mota Bessa
+\ No newline at end of file
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git add .
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git commit -m "adicionando hobbies"
+On branch master
+nothing to commit, working tree clean
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git show
+commit 4b8078146e28958de15f481ec79736820833122d (HEAD -> master)
+Author: Marilia Bessa <mariliambessa@gmail.com>
+Date:   Mon Jun 3 21:07:24 2019 -0300
+
+    adição do nome
+
+diff --git a/MyName.txt b/MyName.txt
+index e69de29..f365967 100644
+--- a/MyName.txt
++++ b/MyName.txt
+@@ -0,0 +1 @@
++nome: Mar<ED>lia Mota Bessa
+\ No newline at end of file
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git commit -m "adicionando hobbies"
+On branch master
+Changes not staged for commit:
+        modified:   MyName.txt
+
+no changes added to commit
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git add .
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git commit -m "adicionando hobbies"
+[master 798c0d5] adicionando hobbies
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git log
+commit 798c0d58801f8f1e56bba9386d8081e147e74bb2 (HEAD -> master)
+Author: Marilia Bessa <mariliambessa@gmail.com>
+Date:   Mon Jun 3 21:14:17 2019 -0300
+
+    adicionando hobbies
+
+commit 4b8078146e28958de15f481ec79736820833122d
+Author: Marilia Bessa <mariliambessa@gmail.com>
+Date:   Mon Jun 3 21:07:24 2019 -0300
+
+    adição do nome
+
+commit 8749a01c641da7a2e8140e0b6e815426c1cdc14d
+Author: Marilia Bessa <mariliambessa@gmail.com>
+Date:   Mon Jun 3 20:57:04 2019 -0300
+
+    Iniciando Projeto
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git show
+commit 798c0d58801f8f1e56bba9386d8081e147e74bb2 (HEAD -> master)
+Author: Marilia Bessa <mariliambessa@gmail.com>
+Date:   Mon Jun 3 21:14:17 2019 -0300
+
+    adicionando hobbies
+
+diff --git a/MyName.txt b/MyName.txt
+index f365967..402a26a 100644
+--- a/MyName.txt
++++ b/MyName.txt
+@@ -1 +1,2 @@
+-nome: Mar<ED>lia Mota Bessa
+\ No newline at end of file
++Nome: Mar<ED>lia Mota Bessa
++Hobbies: sexo, drogas e funk 150
+\ No newline at end of file
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git add .
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git commit -m "alterando hobbies"
+[master 98a97cd] alterando hobbies
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git show
+commit 98a97cdaddb92fd2ae251f8d089953c9814da7ff (HEAD -> master)
+Author: Marilia Bessa <mariliambessa@gmail.com>
+Date:   Mon Jun 3 21:28:46 2019 -0300
+
+    alterando hobbies
+
+diff --git a/MyName.txt b/MyName.txt
+index 402a26a..d90eb82 100644
+--- a/MyName.txt
++++ b/MyName.txt
+@@ -1,2 +1,2 @@
+ Nome: Mar<ED>lia Mota Bessa
+-Hobbies: sexo, drogas e funk 150
+\ No newline at end of file
++Hobbies: piadas para aliviar a ansiedade
+\ No newline at end of file
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git add .
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git commit -m "alterando novamente hobbies"
+[master 010ae51] alterando novamente hobbies
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git remote add origin https://github.com/mariliambessa/MeuPrimeiroProjeto.git
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git push -u origin master
+
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (13/13), 1.11 KiB | 81.00 KiB/s, done.
+Total 13 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/mariliambessa/MeuPrimeiroProjeto.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git remote add origin https://github.com/mariliambessa/MeuPrimeiroProjeto.git
+fatal: remote origin already exists.
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git push -u origin master
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git remote add origin https://github.com/mariliambessa/MeuPrimeiroProjeto.git
+fatal: remote origin already exists.
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git push -u origin master
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+MooDev - 02@DESKTOP-G60L4B3 MINGW64 ~/Desktop/Projeto (master)
+$ git push origin master
+Everything up-to-date
